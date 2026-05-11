@@ -5,7 +5,6 @@ Build the API Interactive project.
 Usage:  python build_api_interactive.py
 Output: ./api_interactive/
 
-WARNING: Contains API credentials. Do NOT commit. Rotate keys if exposed.
 """
 
 import os
@@ -1393,8 +1392,6 @@ pip install -r requirements.txt
 python run.py
 ```
 
-API credentials are read from the `.env` file (already created by the build script). Open http://localhost:5003 in your browser.
-
 ## Modules
 
 | File           | Purpose                                                              |
@@ -1449,8 +1446,6 @@ Switch to **Raw JSON** at any time. Switching is local and does not re-call.
 - **Roblox Game** chains: place ID → universe ID → game info.
 - **Roblox Social Counts** chains 3 requests (friends + followers + following).
 - **Hacker News Top** chains 1 + N requests (top story IDs, then each story).
-- **`numbersapi.com` was removed** — it stopped working (server returns 404 for every path). Replaced with **Random Fact** (uselessfacts.jsph.pl).
-- **X / Twitter** is intentionally excluded — no usable free API tier.
 
 ## Adding a new block
 
